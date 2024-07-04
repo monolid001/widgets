@@ -1,0 +1,21 @@
+@import '../base/_vars';
+
+.index__page {
+
+    .first-section {
+
+        .content {
+
+            .cards {
+                margin: 50px 0 0 0;
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+        }
+
+    }
+
+}

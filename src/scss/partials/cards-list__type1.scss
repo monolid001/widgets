@@ -1,0 +1,75 @@
+@import '../base/_vars';
+
+.cards-list__type1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    li {
+        padding: 15px;
+        width: calc(25% - 20px);
+        height: 100%;
+        border-radius: 20px;
+        transition: $base-transition;
+
+        &:nth-child(3n+1) {
+            background-color: $color-grey;
+
+            &:hover {
+                background-color: #acb2b9;
+            }
+
+        }
+
+        &:nth-child(3n+2) {
+            background-color: $color-orange;
+
+            &:hover {
+                background-color: #b18259;
+            }
+
+        }
+
+        &:nth-child(3n+3) {
+            background-color: $color-blue;
+
+            &:hover {
+                background-color: #3b4a5c;
+            }
+
+        }
+
+        .top-part {
+            width: 100%;
+            height: 150px;
+        }
+
+        .img-wrapper {
+            width: 100%;
+            height: 100%;
+            background-color: $color-white;
+            border-radius: 20px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 20px;
+            }
+
+        }
+
+        .bottom-part {
+            padding: 20px 0 0 0;
+        }
+
+        .btn-wrapper {
+            margin: 30px 0 0 0;
+            width: 100%;
+            height: 40px;
+        }
+
+    }
+
+}
